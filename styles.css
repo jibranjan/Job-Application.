@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(242, 242, 242);
+}
+.container{
+    max-width: 900px;
+    margin: 0 500px;
+    font-family: sans-serif;
+}
+
+.apply_box{
+    max-width: 600px;
+    min-width: 400px;
+    padding: 20px;
+    background-color: white;
+    margin-top: 50px;
+    box-shadow: 4px 4px 4px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+}
+.apply_box span
+{
+    font-size: 20px;
+}
+
+.form_container
+{
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+button, input, select, textarea{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: sans-serif;
+}       
+button, input, select, textarea:focus{
+    outline-color: cadetblue;
+}
+
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    background-color: rgb(243, 231, 215);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+button:hover{
+    background-color: cadetblue;
+    transition: 0.3s ease-out;
+}
+
+.form_control_adress{
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;    
+}
+@media (max-width: 1465px){
+    .form_control_adress{
+        grid-column: 1 / span 1;
+    }
+}
